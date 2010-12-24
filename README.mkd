@@ -1,9 +1,17 @@
 Cheetah Project Repository
 ===========================
 
-* **Authors**: Fabian Santi and Douglas Watson
-* Date: December 2010
-* Course: Models of Biological Sensory Motor Systems by __Auke Ijspert__
+* __Authors__: Fabian Santi and Douglas Watson
+* __Date__: December 2010
+* __Course__: Models of Biological Sensory Motor Systems by Auke Ijspert
 
--- Contents --
+Contents
+------------
+
+The project is organised into several directories.
+
+* __code__ contains the source code for the simulations
+* __results__ contains data files from the simulations and analysis code
+* __instructions__ contains instructions for the project, given by the
+	instructors.
 
