@@ -25,6 +25,7 @@ The project is organised into several directories.
 * __results__ contains data files from the simulations and analysis code
 * __videos__ contains videos of the gaits used in the gait analysis
 
-Note: only the "code" directory is synchronised with github, due to their 
-storage limitations.
+Note: only the "code" directory, and datafiles and scripts in "results" are 
+synchronised with github, due to their storage limitations. No images or videos 
+are included.
 

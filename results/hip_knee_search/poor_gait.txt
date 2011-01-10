@@ -1,0 +1,2 @@
+amplitudeForeHip	amplitudeHindHip	offsetForeHip	offsetHindHip	amplitudeForeKnee	amplitudeHindKnee	offsetKnee	kneePhaseLag	frequency	duration	distance	angle	stability	speed
+2602	0.5	0.5	0.0667	-0.0667	0.6133	0.5267	0.2	0.8	2	8.624	1.42724	0.170185	486.203	0.165496289424861

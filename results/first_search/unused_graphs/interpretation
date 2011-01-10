@@ -1,0 +1,36 @@
+FIRST RUN INTERPRETATION
+------------------------
+
+Incomplete results for amplitudeHip == 0.35. Largest distance is found for that hip amplitude, but too few combinations were tried to optimize the other parameters. The next simulations should thus start from that hip amplitude.
+
+To study the effect of the other variables on distance covered, I limited the dataset to amplitudeHip == 0.275.
+
+- amplitudeForeKnee
+- amplitudeHindKnee
+- offsetForeHip
+- offsetHindHip
+- kneePhaseLag
+
+Why never any knee offset?
+
+Fixed variables:
+- frequency: 2
+- amplitudeForeHip: 0.275
+- amplitudeHindHip = amplitudeForeHip
+- distance: 10
+
+[hip275_dist_v_kneePhaseLag_f_ampForeKnee-ampHindKnee_c_offForeHip]
+An interesting plot to study the effect of knee parameters is to plot distance versus kneePhaseLag, facetted according to amplitudeForeKnee and amplitudeHindKnee. we can then colour according to some other variable. It can help to plot a smoothed curve, to help visualise tendencies.
+
+From this plot, it appears that best results occur for Hind Knee amplitudes of 0.5 (best) to 0.75 (good) and Fore Knee amplitudes of 0.25 to 0.75 (0.5 best). Colouring according to offsetForeHip reveals that the optimal offset depends on knee amplitude. The very best combination both knee amplitudes at 0.5, kneePhaseLag of 0.5, and Fore Hip offset of -0.05.
+
+[optimalKnee - dist_v_kneePhaseLag_f_offsetForeHip-offsetHindHip]
+Now restricting the data to knee amplitudes of 0.5, we can plot the dependence of distance on kneePhaseLag facetted by offset of Fore Hip and Hind Hip. The best values are found for zero or negative hip offsets.
+
+Clearly, there is strong interaction between the different parameters, so generalisation of these results to different hip amplitudes is not reasonable. However, studying the top 100 performers, it does appear that zero to negative hip offsets are more efficient. The precise value differs from one hip amplitude to the next, but remains close to -0.1 (for Hind Hip offset). On the other hand, best results are found for fore hip offsets around 0.05.
+
+CONCLUSION
+---------------
+We could identify optimal parameters for this hip amplitude, but the data also showed that parameters are strongly intercorrelated. Therefore, we cannot generalize these results, so the following simulations will still have to try all values of all the variables. We can however narrow down the range.
+
+

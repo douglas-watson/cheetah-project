@@ -1,0 +1,1 @@
+Nine instances of webots were run sequentially by an external shell script, for nine different values of hip amplitude. Each instance then ran 20x20 fifteen second simulations, all the combinations of 20 values of fore knee amplitude and 20 values of hind knee amplitude.
