@@ -1,0 +1,24 @@
+Webots controller
+=========================
+
+This directory contains the code for the webots simulations using the
+sine-based controller. This code was used both for the systematic searches and
+for the detailed gait analysis.
+
+It is split in two sub-directories:
+* CheetahGait: contains the webots code
+* Output: contains the log files of the latest webots simulation
+
+Lazily, the same controller was modified for each part of the project. The
+controllers were however copied, in case they were needed later on. The
+function of each controller copy is indicated in brackets in the file name.
+
+Systematic search
+-----------------
+
+The systematic search is controlled by the simulation_supervisor.sh script in
+the sine_based/ folder. It sequentially runs an instance of webots for each hip
+amplitude. Each instance of webots then simulates all the combinations of knee
+amplitudes for that given hip amplitudes.
+
+The controller to be used is (amphip-ampknee).

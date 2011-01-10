@@ -1,0 +1,44 @@
+[Debug]
+disable_all = true # if false, per file configuration
+enable_all = false # will override enable all
+# for each following "Domain_output" options, if setted to either STD_ERR or 
+# STD_OUT, will print toward standard stream, either, this the value will be the
+# relative path for a file. You can use the same file for different output.
+#base_output = STD_ERR
+#controller_output = /tmp/Controller.log
+#physics_output = STD_ERR
+
+
+[Controller] #Global preference for the controller
+#motion_restrictor_configuration = 0.0:SAGITAL_FIXED_PITCH|1.0:SAGITAL_FREE_PITCH|2.0:FREE
+#write_state_on_file = enabled
+#write_state_on_file_path = ../../data/State.txt
+initialization_time = 1 # pre-run ofthe simulation
+
+[KneeServo]
+stiffness = 0.52 # N.m.rad-1
+damping = 0.015 # N.m.rad-1.s
+max_speed = 120 # 29.60 rad.s^-1
+max_torque = 20 # 3 N.m
+max_damping_torque = 10.0
+max_compliant_velocity = 15.00 # rad.s^-1
+assymetric_mode =  NONE #  NONE | PD | ELASTIC
+elastic_factor = 10 # stiff = stiff * elastic-mult in second direction
+pd_kp = 15.0 
+pd_kd = 0.02 
+
+
+[Toe]
+soft_erp = 0.07     # 0.04 #0.04 0.1
+soft_cfm = 0.01 # 0.013677 #0.001 0.2
+friction = 2.0
+
+[TouchSensor]
+low_pass_amount = 0.5
+threshold = 0.0
+
+#disabled for now
+#[KneePositionCoder]
+#maximal_detected_value = 3.14159265 # °
+#output_bit_precision = 12 # 2^12 avalaible values 
+
